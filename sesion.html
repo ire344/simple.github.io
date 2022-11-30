@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="img/bubble.png" rel="icon">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bubble Tea</title>
+</head>
+<body>
+	<style type="text/css">
+			
+			.button {
+				border-radius: 12px;
+				border-color: transparent;
+				padding: 10px;
+				font-size: 20px;
+				font-family: "Comfortaa", cursive;
+				background-color: #FBBBE2;
+				margin-right: 10;
+			}
+			.button2 {
+				border-radius: 12px;
+				border-color: transparent;
+				padding: 10px;
+				font-size: 20px;
+				font-family: "Comfortaa", cursive;
+				background-color: #d4cdd2;
+				margin-right: 10;
+			}
+
+			h6,h1{
+				font-family: "Comfortaa", cursive;
+				font-size: 30px;
+				color: black;
+			}
+			
+			a{
+				font-family: "Comfortaa", cursive;
+				font-size: 20px;
+				color: black;
+				margin-left: 5%;
+			}
+			
+			
+			button{
+				margin-left: 100%;
+			}
+			.dd{
+				margin-right: 5%;
+			}
+			#message {
+			  display:none;
+			  background: #f1f1f1;
+			  color: #000;
+			  position: relative;
+			  padding: 20px;
+			  margin-top: 10px;
+			}
+			#message2 {
+			  display:none;
+			  background: #f1f1f1;
+			  color: #000;
+			  position: relative;
+			  padding: 20px;
+			  margin-top: 10px;
+			}
+		</style>
+	<nav>
+		<br>
+		<a href="index.php">Atrás</a>
+		<a href="registro.html" class="dd"><button class="button button2" style="margin: 3px">Registrarse</button></a>
+		<br><br>
+		<center>
+		<form action="funciones/validar_sesión/validar_usuario.php" method="post" class="container"> 
+
+			<div style="display: table;">
+			
+			<h1>Iniciar Sesión</h1>
+			<br><br>
+			<h6>Correo</h6>
+			<input type="email" name="email" class="form-control form-control-lg" placeholder="Usa gmail o hotmail." data-validation-required-message="Por favor inserte su correo electrónico." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Tiene que ser gmail o hotmail." required/>
+			<br>
+			<h6>Contraseña</h6>
+			<input required type="password" name="contraseña" class="form-control form-control-lg" placeholder="Usa caracteres variados." data-validation-required-message="Por favor inserte su contraseña." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un numero, mayúscula y minúscula, y al menos 8 o mas caracteres." required/>
+			<br>
+
+			
+			<input class="button button" type="submit" value="Ingresar" style="margin: 5px">
+
+
+		</form>
+		
+		</center>
+	</nav>
+	
+</body>
+</html>

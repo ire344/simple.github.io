@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="img/bubble.png" rel="icon">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bubble Tea</title>
+</head>
+<body>
+	<style type="text/css">
+			
+			.button {
+				border-radius: 12px;
+				border-color: transparent;
+				padding: 10px;
+				font-size: 20px;
+				font-family: "Comfortaa", cursive;
+				background-color: #FBBBE2;
+				margin-right: 10;
+			}
+
+			h6{
+				font-family: "Comfortaa", cursive;
+				font-size: 30px;
+				color: black;
+			}
+			
+			a{
+				font-family: "Comfortaa", cursive;
+				font-size: 20px;
+				color: black;
+				margin-left: 5%;
+			}
+			
+			
+			button{
+				margin-left: 100%;
+			}
+
+			div{
+				margin-left: 41%;
+			}
+		</style>
+	<nav>
+		<br>
+		<a href="sesion.html">Atrás</a>
+		<br><br>
+		<div style="display: table;">
+		<center>
+		<form action="funciones/insertar/insertar_usuario.php" method="post" enctype="multipart/form-data" class="container">
+
+		<h6>Nombre</h6>
+		<input required type="text" name="nombre" class="form-control form-control-lg" placeholder="Solo letras." data-validation-required-message="Por favor inserte su nombre."/>
+		<br>
+
+		<h6>Nombre de usuario</h6>
+		<input required type="text" name="nombre_usuario" class="form-control form-control-lg" placeholder="Usa caracteres." data-validation-required-message="Por favor inserte su nombre de usuario."/>
+		<br>
+
+
+
+		<h6>Correo</h6>
+		<input required type="email" name="email" class="form-control form-control-lg" placeholder="Usa gmail o hotmail." data-validation-required-message="Por favor inserte su correo electrónico."/>
+		<br>
+
+		<h6>Contraseña</h6>
+		<input required type="password" name="contraseña" class="form-control form-control-lg" placeholder="Usa caracteres variados." data-validation-required-message="Por favor inserte su contraseña."/>
+		<br>
+
+		<h6>Tarjeta</h6>
+		<input type="number" name="tarjeta" class="form-control form-control-lg" placeholder="Usa numeros."/>
+		<br>
+
+		<h6>Dirección</h6>
+		<input required type="text" name="direccion" class="form-control form-control-lg" placeholder="Ingresa calle y numero." data-validation-required-message="Por favor inserte su dirección."/>
+		<br>
+
+		
+		<br>
+
+		<a href="sesion.html"><button type="submit" class="button button" style="margin: 5px">Registrarse</button></a>
+
+		</form>
+		</center>
+		</div>
+		<br><br>
+		
+	</nav>
+	
+</body>
+</html>
